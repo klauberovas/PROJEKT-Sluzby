@@ -1,2 +1,40 @@
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
+
+body {
+    font-family:'Montserrat', sans-serif ;
+    background-color:#FAFAFA ;
+}
+
+p {
+   color: #8B8B8B; 
+}
+
+p, 
+h2 {
+    font-size: 16px;
+}
+
+h1{
+    font-size: 28px;
+}
+
+div p{
+    font-size: 13px;
+}
+
+.button a{
+    text-decoration: none;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 20px;
+}
+
+.blue {
+    background-color: #407BFF;
+}
+
+.grey {
+    background-color: #8B8B8B;
+}
+
