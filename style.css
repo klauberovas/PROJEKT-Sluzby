@@ -4,6 +4,8 @@ html { box-sizing: border-box; }
 body {
     font-family:'Montserrat', sans-serif ;
     background-color:#FAFAFA ;
+    text-align: center;
+    padding: 60px 20px;
 }
 
 p {
@@ -19,22 +21,43 @@ h1{
     font-size: 28px;
 }
 
+hr {
+    background-color: #407BFF;
+    width: 60px;
+    height: 3px;
+    margin: 10px auto 30px auto;
+}
+
 div p{
     font-size: 13px;
 }
 
-.button a{
+/* ---Buttons --- */
+.buttons {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.button {
+    font-size: 14px;
     text-decoration: none;
-    padding: 10px 30px;
     color: white;
     border-radius: 20px;
+    padding: 10px 30px;
+    display: block;
+    height: 40px;
+    margin: auto;
 }
 
 .blue {
     background-color: #407BFF;
+    margin-bottom: 10px;
+    max-width: 200px;
 }
 
 .grey {
     background-color: #8B8B8B;
+    max-width: 225px;
+    margin-bottom: 60px;
 }
+ 
 
