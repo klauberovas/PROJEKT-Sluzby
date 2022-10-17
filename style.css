@@ -8,6 +8,7 @@ body {
     padding: 60px 20px;
 }
 
+
 p {
    color: #8B8B8B; 
 }
@@ -21,6 +22,12 @@ h1{
     font-size: 28px;
 }
 
+/* --- icons --- */
+div p{
+    font-size: 13px;
+}
+
+/* --- underline --- */
 hr {
     background-color: #407BFF;
     width: 60px;
@@ -28,15 +35,12 @@ hr {
     margin: 10px auto 30px auto;
 }
 
-div p{
-    font-size: 13px;
-}
-
 /* ---Buttons --- */
 .buttons {
     margin-top: 30px;
     margin-bottom: 60px;
 }
+
 .button {
     font-size: 14px;
     text-decoration: none;
