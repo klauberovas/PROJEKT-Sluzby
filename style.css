@@ -3,32 +3,37 @@ html { box-sizing: border-box; }
 
 body {
     font-family:'Montserrat', sans-serif ;
+    font-size: 16px;
     background-color:#FAFAFA ;
     text-align: center;
     padding: 60px 20px;
+    color: #8B8B8B; 
 }
 
-
-p {
-   color: #8B8B8B; 
-}
-
-p, 
-h2 {
-    font-size: 16px;
-}
 
 h1{
     font-size: 28px;
+    color: black;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 16px;
+    color: black;
+    margin-top: 80px;
+}
+
+span{
+    white-space: nowrap;
 }
 
 /* --- icons --- */
-div p{
+.icons {
     font-size: 13px;
 }
 
 /* --- underline --- */
-hr {
+.line {
     background-color: #407BFF;
     width: 60px;
     height: 3px;
@@ -38,7 +43,6 @@ hr {
 /* ---Buttons --- */
 .buttons {
     margin-top: 30px;
-    margin-bottom: 60px;
 }
 
 .button {
@@ -63,5 +67,114 @@ hr {
     max-width: 225px;
     margin-bottom: 60px;
 }
- 
 
+
+ 
+/* ---Mobilní verze --- */
+.tablet-traveler {
+    display: none;
+}
+.icons {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 15px;  
+    }
+
+.icon {
+    background-color: white;
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0px 4px 6px #407BFF1F ;
+    border-radius: 10px;
+    padding: 20px 0;
+    }
+
+.intro,
+.text {
+    margin-bottom: 30px;
+}
+
+/* --- Tabletová verze  --- */
+@media screen and (min-width: 640px) {
+  .traveler {
+    display: none;
+  }
+
+  .tablet-traveler {
+    display: block;
+    margin: auto;
+  }
+    .button {
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .text {
+        max-width: 550px;
+        margin: auto;
+    }
+    .icons {
+        flex-wrap: nowrap;
+    }
+
+    .icon {
+        flex-wrap: wrap;
+        padding: 40px 15px;
+    }
+
+ }
+
+/*--- PC --- */
+
+@media screen and (min-width: 1100px) {
+    body {
+        text-align: left; 
+    }
+
+    h2 {
+        margin: 0;
+    }
+    .container { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        max-width: 1040px;
+        margin: auto;
+        margin-bottom: 80px;
+   }
+
+   .text {
+        order: 1; 
+        margin: 0;
+   }
+
+   .tablet-traveler {
+        order: 2;
+        max-width: 425px;
+   }
+   
+   .line {
+        text-align: left;
+        margin: 10px 0 30px 0;
+    }
+
+    .icons {
+        text-align: center;
+        max-width: 550px;
+    }
+
+    .two {
+        order: initial;
+    }
+
+    .one,
+    .two {
+        max-width: 430px;
+    }
+    
+
+
+}
