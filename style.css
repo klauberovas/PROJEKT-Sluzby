@@ -166,12 +166,12 @@ span{
         max-width: 550px;
     }
 
-    .two {
+    .right {
         order: initial;
     }
 
-    .one,
-    .two {
+    .left,
+    .right {
         max-width: 430px;
     }
     
